@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway",sans-serif;
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #f1f1f1;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h5,h3,.button{
+  padding: 10px 16px;
+  overflow-wrap: break-word !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+h5{
+  font-weight:100;
+  font-size:inherit;
+}
+button{
+  width: 8rem;
+  height: 2.5rem;
+  background-color: white;
+  border: 1px solid grey;
+}
+img{
+  width: 100%;
+}
+#wrapper{
+  max-width: 1250px;
+  margin: auto;
+  display: grid;
+}
+#container{
+display: flex;
+}
+.header{
+  width: 100%;
+  display: grid;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 1rem 3rem;
+}
+.heading{
+  display:flex;
+  flex: 1;
+  align-items:center;
+  padding-left: 18rem;
+}
+
+.ul{
+  padding: 10px 6rem;
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.image{
+  width: 100px;
+  height: 50px;
+  background-color: black;
+}
+
+a{
+  color: rgb(56, 56, 56);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.body{
+  display: grid;
+  gap: 10px;
+  min-height:20rem;
+  background-color: #fff;
+  width: 800px;
+  margin: 13px;
+  box-shadow:  0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+.card{
+  display: grid;
+  background-color:white;
+  width: 400px;
+  margin: 13px;
+  box-shadow:  0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+#leftbody{
+  display: grid;
+  gap: 1rem;
+}
+#rightbody{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  
+}
+
+.lorem{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 8px 16px;
+  border-top: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+}
+.formatted-para{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 8px 16px;
+  border-top: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+}
+.formatted-para:hover{
+  background-color: #ccc;
+}
+
+.lorem:hover{
+  background-color: #ccc;
+}
+.smallimg{
+  width:3rem;
+  height: 3rem;
+}
+.footer{
+  padding: 32px 16px;
+  background-color: #616161;
+  display: grid;
+  gap: 1rem;
   color: white;
+  margin-top: 2rem;
+  .button{
+    background-color: black;
+    color: #ffff;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+.tags{
+  padding:0 10px;
+  font-size:12px;
+  border:1px solid gray;
+  height:17px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cardimg{
+  height: 16rem;
+  object-fit: cover;
 }
